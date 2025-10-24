@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Judul APlikasi ini",
+      title: "Judul Aplikasi ini",
       home: MyHome(),
     );
   }
@@ -28,10 +28,15 @@ class MyHome extends StatelessWidget {
         backgroundColor: Colors.red,
         actions: [
           Icon(Icons.person_3, color: Colors.blue),
-          SizedBox(width: 12),
-          Icon(Icons.ac_unit),
-          SizedBox(width: 12),
+          SizedBox(width: 8, height: 8),
+          Icon(Icons.ac_unit, color: Colors.white),
+          SizedBox(width: 20, height: 20),
         ],
+      ),
+      body: Container(
+        alignment: Alignment.center,
+        color: Colors.green,
+        child: Text("HeyHo"),
       ),
     );
   }
