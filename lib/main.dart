@@ -26,6 +26,12 @@ class MyHome extends StatelessWidget {
       appBar: AppBar(
         title: Text("Ini Judul nya Mase"),
         backgroundColor: Colors.red,
+        actions: [
+          Icon(Icons.person_3),
+          SizedBox(width: 12),
+          Icon(Icons.ac_unit),
+          SizedBox(width: 12),
+        ],
       ),
     );
   }
