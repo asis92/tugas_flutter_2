@@ -33,10 +33,41 @@ class MyHome extends StatelessWidget {
           SizedBox(width: 20, height: 20),
         ],
       ),
-      body: Container(
-        alignment: Alignment.center,
-        color: Colors.green,
-        child: Text("HeyHo"),
+      body: Column(
+        children: [
+          Container(
+            width: 100,
+            height: 100,
+
+            margin: EdgeInsets.fromLTRB(15, 20, 15, 20),
+            padding: EdgeInsets.all(20),
+            alignment: Alignment.topCenter,
+
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: AlignmentGeometry.bottomLeft,
+                colors: [Colors.blueGrey, Colors.blue],
+              ),
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child: Text("HeyHo"),
+          ),
+          Container(
+            width: 100,
+            height: 100,
+
+            margin: EdgeInsets.fromLTRB(15, 20, 15, 20),
+            padding: EdgeInsets.all(20),
+            alignment: Alignment.topCenter,
+
+            decoration: BoxDecoration(
+              color: Colors.lightGreen,
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child: Text("HeyHo"),
+          ),
+        ],
       ),
     );
   }
