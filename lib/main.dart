@@ -27,7 +27,7 @@ class MyHome extends StatelessWidget {
         title: Text("Ini Judul nya Mase"),
         backgroundColor: Colors.red,
         actions: [
-          Icon(Icons.person_3),
+          Icon(Icons.person_3, color: Colors.blue),
           SizedBox(width: 12),
           Icon(Icons.ac_unit),
           SizedBox(width: 12),
