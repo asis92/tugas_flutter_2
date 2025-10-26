@@ -65,6 +65,9 @@ class MyHome extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.lightGreen,
               borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: Image.asset("assets/image/DamkarPosBalakar.jpg"),
+              ),
             ),
             child: Text("HeyHo"),
           ),
