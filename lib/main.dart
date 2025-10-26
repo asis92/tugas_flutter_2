@@ -52,7 +52,12 @@ class MyHome extends StatelessWidget {
               borderRadius: BorderRadius.circular(10.0),
             ),
             transform: Matrix4.rotationZ(0.1),
-            child: Text("HeyHo"),
+            child: Image.asset(
+              'assets/image/muerta.png', // path gambar lokal
+              width: 20, // atur lebar
+              height: 20, // atur tinggi
+              fit: BoxFit.cover,
+            ),
           ),
           Container(
             width: 100,
@@ -65,9 +70,6 @@ class MyHome extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.lightGreen,
               borderRadius: BorderRadius.circular(10.0),
-              image: DecorationImage(
-                image: Image.asset("assets/image/DamkarPosBalakar.jpg"),
-              ),
             ),
             child: Text("HeyHo"),
           ),
