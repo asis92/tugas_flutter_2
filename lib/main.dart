@@ -46,7 +46,7 @@ class MyHome extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topRight,
-                end: AlignmentGeometry.bottomLeft,
+                end: Alignment.bottomLeft,
                 colors: [Colors.blueGrey, Colors.blue],
               ),
               borderRadius: BorderRadius.circular(10.0),
@@ -54,9 +54,6 @@ class MyHome extends StatelessWidget {
             transform: Matrix4.rotationZ(0.1),
             child: Image.asset(
               'assets/image/muerta.png', // path gambar lokal
-              width: 20, // atur lebar
-              height: 20, // atur tinggi
-              fit: BoxFit.cover,
             ),
           ),
           Container(
